@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Task Application</title>
+</head>
+<body>
+  <h1>Task Application</h1>
+  <form method="post" action ="/newTask" id="addTaskForm">
+    <input type="text" id="newTaskInput" name="task" placeholder="New Task" required>
+    <button id="post" type="submit">Add Task</button>
+  </form>
+  <ul>
+  <%taskList.forEach(task => {%>
+    <li><%= task.tasktitle %> <button type="submit" onclick="deleteTask(event)">Delete task</button></li>
+  <%})%>
+  </ul>
+  <script>
+    function deleteTask(event) {
+    event.preventDefault();
+
+    const form = event.target.parentElement;
+    const taskId = form.getAttribute('action');
+
+    fetch(taskId, {
+      method: 'DELETE'
+    })
+      .then(response => {
+        if (response.ok) {
+          console.log('Task deleted successfully');
+          // Optionally update the UI or perform any other action after deletion
+        } else {
+          throw new Error('Failed to delete task');
+        }
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }
+  </script>
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
