@@ -1,0 +1,95 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap-grid.css.map">
+    <link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="mainPage.css">
+
+    <style>
+        .col-md-3 {
+            display: block;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="mainPage.html">Task-O-Pad</a>
+          <button style="color: #ffffff"  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">↨</span>
+          </button>
+          <div class="collapse navbar-collapse navbar-default" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="mainPage.html">#</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="testingGrid.html">Tasks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">#</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More Options
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">#</a></li>
+                  <li><a class="dropdown-item" href="#">#</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-12 offset-md-3">
+            <h1>Task #1</h1>
+            <p>This task is about sum shit idk man, im testing what happens if I just keep typing, ideally it should go down a row but idk man</p>
+            <button type="button">Edit Progress</button>  <!-- make this button go to "Edit Task" page-->
+            <div>
+                <progress id="progressBar1" value="0" max="100"> 0% </progress>
+                <h7 id="progressText1">0%</h7>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <h1>Task #2</h1>
+            <p>This task is about sum shit idk man, im testing what happens if I just keep typing, ideally it should go down a row but idk man</p>
+            <button type="button">Edit Progress</button> <!-- make this button go to "Edit Task" page-->
+            <div>
+                <progress id="progressBar2" value="0" max="100"> 0% </progress>
+                <h7 id="progressText2">0%</h7>
+            </div>
+        </div>
+        <div class="col offset-md-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-sm-12 offset-md-3">
+            <h1>Task #3</h1>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <h1>Task #4</h1>
+        </div>
+        <div class="col offset-md-3"></div>
+    </div>
+
+     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+
+</body>
