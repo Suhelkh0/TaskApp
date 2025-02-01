@@ -14,14 +14,7 @@ TaskApp is a **task management system** that allows users to create, organize, a
 ## 📜 Table of Contents
 - [🛠 Features](#-features)
 - [👥 User Roles](#-user-roles)
-- [📸 Screenshots](#-screenshots)
 - [🚀 How It Works](#-how-it-works)
-- [📦 Installation](#-installation)
-- [🛠 Technologies Used](#-technologies-used)
-- [📊 Analytics & Charts](#-analytics--charts)
-- [✅ Testing](#-testing)
-- [🤝 Contributing](#-contributing)
-- [📜 License](#-license)
 
 ---
 
@@ -45,16 +38,6 @@ TaskApp supports **two primary user roles**:
 
 ---
 
-## 📸 **Screenshots**
-| Feature  | Screenshot |
-|----------|-----------|
-| **Login Page** | ![Login](docs/images/login.png) |
-| **Task Management** | ![Tasks](docs/images/task-list.png) |
-| **Task Folders** | ![Task Folders](docs/images/task-folders.png) |
-| **Progress Charts** | ![Charts](docs/images/user-progress-chart.png) |
-
----
-
 ## 🚀 **How It Works**
 1️⃣ **User Login**  
    - Users authenticate using email & password.  
@@ -70,18 +53,3 @@ TaskApp supports **two primary user roles**:
 
 4️⃣ **Manager Dashboard**  
    - Managers **assign, track, and analyze tasks**.
-
----
-
-## 📦 **Installation**
-### 🔹 Prerequisites
-Ensure you have:
-- **Node.js** & **NPM** installed (`node -v && npm -v`)
-- **MongoDB** (for backend storage)
-- **Chart.js** (for analytics)
-- **Express.js** (for API routing)
-
-### 🔹 Clone the Repository
-```sh
-git clone https://github.com/YOUR_USERNAME/TaskApp.git
-cd TaskApp
