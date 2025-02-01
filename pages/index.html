@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Task Application</title>
+</head>
+<body>
+  <h1>Task Application</h1>
+  <form method="post" action ="/newTask" id="addTaskForm">
+    <input type="text" id="newTaskInput" name="task" placeholder="New Task" required>
+    <button id="post" type="submit">Add Task</button>
+  </form>
+  <ul id="taskList">
+  </ul>
+
+  <script src="script.js"></script>
+
+  <!-- <script>
+    // Event listener for the form submit event
+    document.getElementById('addTaskForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      var newTaskInput = document.getElementById('newTaskInput');
+      var newTask = newTaskInput.value;
+
+      // Create a new task list item
+      var listItem = document.createElement('li');
+      listItem.textContent = newTask;
+
+      // Create a delete button for the task
+      var deleteButton = document.createElement('button');
+      deleteButton.textContent = 'Remove';
+      deleteButton.addEventListener('click', function () {
+        listItem.remove();
+        // Perform the delete operation in the database
+        deleteTask(newTask);
+      });
+
+      // Append the delete button to the task list item
+      listItem.appendChild(deleteButton);
+
+      // Append the task list item to the task list
+      document.getElementById('taskList').appendChild(listItem);
+
+      // Perform the insert operation in the database
+      addTask(newTask);
+
+      // Clear the input field
+      newTaskInput.value = '';
+    });
+
+    // Function to add a task to the database
+    function addTask(task) {
+      
+    }
+
+    // Function to delete a task from the database
+    function deleteTask(task) {
+      // Send an HTTP request to your server-side code to delete the task from the MongoDB database
+      // You can use AJAX or any other method to perform the request
+    }
+  </script> -->
+</body>
+</html>
